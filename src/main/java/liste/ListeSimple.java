@@ -1,11 +1,12 @@
 package liste;
 
-public class ListeSimple {
+publi class ListeSimple {
     private long size;
     Noeud tete;
 
     public long getSize() {
         return size;
+        
     }
 
     public void ajout(int element) {
