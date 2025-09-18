@@ -1,0 +1,14 @@
+name: Bonjour
+on:[push]  # Ce workflow se déclenche sur chaque push dans le dépôt
+
+jobs:
+  Salutations:  # Nom du job
+    runs-on: ubuntu-latest  # OS où s'exécute le job
+    steps:
+      - name: Hello  # Première tâche : saluer
+        env:
+          personneASaluer: 'Mon voisin Totoro'
+        run: echo "Bonjour ${personneASaluer}"
+
+      - name: L'heure de salutation  # Deuxième tâche : afficher l'heure
+        run: echo "L'heure était $(date)."
