@@ -48,7 +48,6 @@ class ListeSimpleTest {
         listeATester.ajout(1);
         listeATester.ajout(2);
         listeATester.ajout(3);
-        // Correct order: expected, actual
         assertEquals("ListeSimple(Noeud(3), Noeud(2), Noeud(1))", listeATester.toString());
     }
 
@@ -113,14 +112,12 @@ class ListeSimpleTest {
     }
 
     @Test
-   @Test
-void supprimeTousListeVide() {
-    // Call supprimeTous instead of supprimePremier
-    listeATester.supprimeTous(1);
-    assertNull(listeATester.tete);
-    assertEquals(0, listeATester.getSize());
-}
-
+    void supprimeTousListeVide() {
+        // Corrected: test supprimeTous on empty list
+        listeATester.supprimeTous(1);
+        assertNull(listeATester.tete);
+        assertEquals(0, listeATester.getSize());
+    }
 
     @Test
     void supprimeTousUneSeuleFoisAuDebut() {
