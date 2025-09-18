@@ -122,6 +122,7 @@ public class ListeSimple {
             return;
         Noeud precedentR1;
         Noeud precedentR2;
+        
         if (r1 != tete && r2 != tete) {
             precedentR1 = getPrecedent(r1);
             precedentR2 = getPrecedent(r2);
