@@ -1,5 +1,5 @@
 name: Bonjour
-on:[push]  # Ce workflow se déclenche sur chaque push dans le dépôt
+on:[push]  
 
 jobs:
   Salutations:  # Nom du job
