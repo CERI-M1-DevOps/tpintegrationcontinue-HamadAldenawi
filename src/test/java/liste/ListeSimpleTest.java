@@ -5,13 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
- class ListeSimpleTest {
+class ListeSimpleTest {
 
     ListeSimple listeATester;
-    
 
     @BeforeEach
-    public void init() {
+    void initialiser() {
         listeATester = new ListeSimple();
     }
 
