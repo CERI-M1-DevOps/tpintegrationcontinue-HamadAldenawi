@@ -16,7 +16,8 @@ jobs:
           java-version: '21'
           distribution: 'corretto'
 
-      - name: Generate Javadoc
+      - name: Generate Javadoccode .
+      
         run: mvn -B javadoc:javadoc
 
       - name: Deploy to GitHub Pages
